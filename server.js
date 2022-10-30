@@ -85,7 +85,7 @@ const cricketerSchema = new mongoose.Schema({
 
 const Cricketer = new mongoose.model("cricketer", cricketerSchema);
 
-app.get("/indian-cricketers", (req, res) => {
+app.get("/", (req, res) => {
   Cricketer.find({}, (err, cricketers) => {
     if (err) {
       res.send(err);
@@ -94,3 +94,9 @@ app.get("/indian-cricketers", (req, res) => {
     }
   });
 });
+
+app.post("/", (req, res) => {
+  res.send({ statusCode: 404, message: "we dont allow post to our server" });
+});
+
+app.listen(process.env.PORT || 3000, () => console.log("server started"));
