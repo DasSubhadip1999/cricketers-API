@@ -1,0 +1,19 @@
+{
+  "name": "indian-cricketers-api",
+  "version": "1.0.0",
+  "description": "This a api which contains indian cricketers details",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "subhdadip_das",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "lodash": "^4.17.21",
+    "mongoose": "^6.7.0"
+  }
+}
